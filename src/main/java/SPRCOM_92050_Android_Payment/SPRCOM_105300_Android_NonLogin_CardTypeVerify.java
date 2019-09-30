@@ -87,11 +87,12 @@ public class SPRCOM_105300_Android_NonLogin_CardTypeVerify extends MainBase {
                     "com.sprint.care.beta:id/zipCodeTextField");
             findByResourceID_Click(5, "com.sprint.care.beta:id/save");
             // Google Credit Card Options
-            findByResourceID_Click(
-                    5,
-                    "android:id/autofill_save_no",
-                    true,
-                    "No Google Credit Info Showed");
+            if(findByResourceID_Exist(5, "android:id/autofill_save_no")) {
+                findByResourceID_Click(1, "android:id/autofill_save_no");
+            }
+
+
+
         }
     }
 

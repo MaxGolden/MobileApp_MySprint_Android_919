@@ -1,0 +1,205 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "SPRCOM_92050_Android_Payment",
+    "children" : [ {
+      "name" : "SPRCOM_105300_Android_NonLogin_AddPaymentMethod",
+      "children" : [ {
+        "name" : "SPRCOM_105302",
+        "uid" : "fc595bf5111dd299",
+        "parentUid" : "75029f3168756d5f7a785dbbd1b3bac2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1569860904103,
+          "stop" : 1569860951933,
+          "duration" : 47830
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "75029f3168756d5f7a785dbbd1b3bac2"
+    }, {
+      "name" : "SPRCOM_105300_Android_NonLogin_Payment_Amount",
+      "children" : [ {
+        "name" : "SPRCOM_105304",
+        "uid" : "2c5bf8c939b2f798",
+        "parentUid" : "fbd891224bc133e06100513711644e48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1569860952352,
+          "stop" : 1569860964292,
+          "duration" : 11940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "fbd891224bc133e06100513711644e48"
+    }, {
+      "name" : "SPRCOM_105300_Android_NonLogin_CardTypeVerify",
+      "children" : [ {
+        "name" : "SPRCOM_105306",
+        "uid" : "6b0356684ff95c84",
+        "parentUid" : "683fbb67c4859abfb48ab9ce0d6e2d7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1569860964802,
+          "stop" : 1569861000276,
+          "duration" : 35474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "4444424444444440", "Visa", "LOAD TEST ACCOUNTS", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      }, {
+        "name" : "SPRCOM_105306",
+        "uid" : "b440b434f43fb691",
+        "parentUid" : "683fbb67c4859abfb48ab9ce0d6e2d7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1569861001078,
+          "stop" : 1569861040818,
+          "duration" : 39740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "5500005555555559", "MasterCard", "LOAD TEST ACCOUNTS", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      }, {
+        "name" : "SPRCOM_105306",
+        "uid" : "288f9bc0a6eeaf45",
+        "parentUid" : "683fbb67c4859abfb48ab9ce0d6e2d7f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1569861041237,
+          "stop" : 1569861077651,
+          "duration" : 36414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "36111111111111", "MasterCard Diners", "LOAD TEST ACCOUNTS", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "683fbb67c4859abfb48ab9ce0d6e2d7f"
+    }, {
+      "name" : "SPRCOM_105500_Android_LoginAO_Payment_Basic",
+      "children" : [ {
+        "name" : "SPRCOM_105504",
+        "uid" : "12b626b9d2e9f13a",
+        "parentUid" : "729ad5b31c550c4da752adf2363f0336",
+        "status" : "passed",
+        "time" : {
+          "start" : 1569861152643,
+          "stop" : 1569861174708,
+          "duration" : 22065
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "729ad5b31c550c4da752adf2363f0336"
+    }, {
+      "name" : "SPRCOM_105500_Android_LoginAO_AddpaymentMethod",
+      "children" : [ {
+        "name" : "SPRCOM_105506",
+        "uid" : "32bad3d8eb9606bf",
+        "parentUid" : "f2230ad6360a2d9ddc9fe76b706abb8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1569861175148,
+          "stop" : 1569861219900,
+          "duration" : 44752
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "f2230ad6360a2d9ddc9fe76b706abb8a"
+    } ],
+    "uid" : "5a6993df0bd91c39c4eb9a117f5e53fd"
+  }, {
+    "name" : "SPRCOM_92051_Android_LoginAO.SPRCOM_105400_Android_LoginAO_Login",
+    "children" : [ {
+      "name" : "SPRCOM_105402",
+      "uid" : "7602475121dd2773",
+      "parentUid" : "8bd0a8add5a65cb5522bb0d5d9f5c7ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569861253316,
+        "stop" : 1569861288322,
+        "duration" : 35006
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "4733", "ST2", "3369549079", "TWREG-59003", "T3stM3.P1s", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+    }, {
+      "name" : "SPRCOM_105404",
+      "uid" : "1646f404279a01a4",
+      "parentUid" : "8bd0a8add5a65cb5522bb0d5d9f5c7ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569861288766,
+        "stop" : 1569861318579,
+        "duration" : 29813
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "4733", "ST2", "3369549079", "TWREG-59003", "T3stM3.P1s", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+    } ],
+    "uid" : "SPRCOM_92051_Android_LoginAO.SPRCOM_105400_Android_LoginAO_Login"
+  }, {
+    "name" : "SPRCOM_92052_Android_Sales",
+    "children" : [ {
+      "name" : "SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart",
+      "children" : [ {
+        "name" : "SPRCOM_105702",
+        "uid" : "c18988011b033eb3",
+        "parentUid" : "6024d05d0921feab6abca4a0296845f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1569861319000,
+          "stop" : 1569861397343,
+          "duration" : 78343
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "Phones", "Apple", "Apple iPhone XR", "Lease", "Unlimited", "Add protection", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "6024d05d0921feab6abca4a0296845f4"
+    }, {
+      "name" : "SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart",
+      "children" : [ {
+        "name" : "SPRCOM_105706",
+        "uid" : "c2644ad65d526d4a",
+        "parentUid" : "1878505e0954e90ac02fad02f191dbb6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1569861397764,
+          "stop" : 1569861473904,
+          "duration" : 76140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "Phones", "Apple", "Apple iPhone XR", "Lease", "Unlimited Savings Plan", "Add protection", "Buy this phone", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "1878505e0954e90ac02fad02f191dbb6"
+    }, {
+      "name" : "SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus",
+      "children" : [ {
+        "name" : "SPRCOM_105708",
+        "uid" : "483fcf664450db4b",
+        "parentUid" : "6b7bf81f0111b98fe68b41572bb309ae",
+        "status" : "failed",
+        "time" : {
+          "start" : 1569861474344,
+          "stop" : 1569861507921,
+          "duration" : 33577
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4733", "Phones", "Apple", "Apple iPhone XR", "Lease", "Unlimited Savings Plan", "Add protection", "Buy this phone", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+      } ],
+      "uid" : "6b7bf81f0111b98fe68b41572bb309ae"
+    } ],
+    "uid" : "5009cd7ca5a7f5aac631e2864a33ae49"
+  } ]
+}

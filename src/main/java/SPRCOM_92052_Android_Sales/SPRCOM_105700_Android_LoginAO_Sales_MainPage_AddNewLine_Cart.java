@@ -9,8 +9,8 @@ import static Listeners_Tests.Listeners_Android.saveTextLog_Allure_er;
 import static Util.Android_Driver_Methods.*;
 
 @Listeners(Listeners_Tests.Listeners_Android.class)
-@Epic("SPRCOM-92052 My Sprint App iOS - Sales")
-@Feature("SPRCOM-105700 My Sprint App iOS - LoginAO Sales")
+@Epic("SPRCOM-92052 My Sprint App Android - Sales")
+@Feature("SPRCOM-105700 My Sprint App Android - LoginAO Sales")
 public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extends MainBase {
 
     public Float Monthly;
@@ -20,7 +20,7 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
             dataProviderClass = Data.NewLine_DeviceOptions.class)
     @Description("My Sprint app Login - Sales: 'Upgrade this device' on the MainPage")
     @Severity(SeverityLevel.CRITICAL)
-    @Story("SPRCOM-105702 My Sprint App iOS - MainPage: Upgrade the device")
+    @Story("SPRCOM-105702 MainPage: Add new line")
     public void SPRCOM_105702(String deviceType, String brand, String model, String planOption, String phonePlan,
                               String protectionOption) throws Exception
     {
@@ -39,11 +39,17 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
     private void SPRCOM_105702_Step1()
     {
         saveTextLog_Allure_er("Bottom Sheet should pop up with different type of devices");
-        findByAndroidUIAutomator_Click(
-                30,
-                "text(\"Add a new device\")",
-                true,
-                "Element not found");
+//        List<AndroidElement> deviceAdd = findByResourceID_List(
+//                30, "com.sprint.care.beta:id/action_btn");
+//        int index = findByList_TextMatchIndex(deviceAdd, 0,2, "add a new device");
+//        if(index >= 0) {
+//            deviceAdd.get(index).click();
+//        } else {
+//            assertFail_toMainPage(false, 0,"Element not found");
+//        }
+        findByList_IndexClick(
+                30, "com.sprint.care.beta:id/action_btn",
+                "add a new device");
     }
 
     @Step("2. Tap Phones icon")
@@ -54,7 +60,7 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
     }
 
     @Step("3. Default filter, tap the model name on the page")
-    private void SPRCOM_105702_Step3(String model) throws Exception
+    private void SPRCOM_105702_Step3(String model)
     {
         saveTextLog_Allure_er("Device Details page is displayed");
         findByAndroidUIAutomator_Click(
@@ -68,18 +74,15 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
     private void SPRCOM_105702_Step4()
     {
         saveTextLog_Allure_er("Payment page is displayed");
-        if(findByResourceID_Enable(30, "com.sprint.care.beta:id/continueButton")) {
-            findByResourceID_Click(5, "com.sprint.care.beta:id/continueButton");
-        } else {
-            assertFail_toMainPage(3, "Continue button is having issue");
-        }
+        findByResourceID_Click(
+                30, "com.sprint.care.beta:id/continueButton",
+                true, "Element not found");
     }
 
     @Step("5. Use Data Provider with three options and tap continue")
     private void SPRCOM_105702_Step5(String planOption) throws Exception
     {
         saveTextLog_Allure_er("Plans page is displayed");
-
         String full_planOption;
         if(planOption.equals("Lease")) {
             full_planOption = "Sprint Flex 18-mo. lease";
@@ -88,8 +91,9 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
         } else {
             full_planOption = "Buy it with 24 monthly installments";
         }
-
-        findByAndroidUIAutomator_Click(15, "text(\"" + full_planOption + "\")");
+        findByAndroidUIAutomator_Click(
+                15, "text(\"" + full_planOption + "\")",
+                true, "Error");
         findByResourceID_Click(5, "com.sprint.care.beta:id/continueButton");
     }
 
@@ -111,13 +115,17 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
     }
 
     @Step("7. Tap button ‘Add protection’?")
-    private void SPRCOM_105702_Step7(String protectionOption) throws InterruptedException
+    private void SPRCOM_105702_Step7(String protectionOption)
     {
         saveTextLog_Allure_er("Wait for loading(15s), Cart page is displayed OR error happens, and main page is displayed");
         if(protectionOption.equals("Add protection")) {
-            findByResourceID_Click(30, "com.sprint.care.beta:id/acceptAndContinue");
+            findByResourceID_Click(
+                    30, "com.sprint.care.beta:id/acceptAndContinue",
+                    true, "Error");
         } else {
-            findByResourceID_Click(30, "com.sprint.care.beta:id/declineAndContinue");
+            findByResourceID_Click(
+                    30, "com.sprint.care.beta:id/declineAndContinue",
+                    true, "Error");
             findByResourceID_Click(10, "com.sprint.care.beta:id/continue_without_protection_button");
         }
     }
@@ -127,7 +135,9 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
     {
         saveTextLog_Allure_er("All payment values are correct & Main page is displayed");
         if(findByAndroidUIAutomator_Exist(10, "text(\"Error\")")) {
-            findByResourceID_Click(30, "com.sprint.care.beta:id/positive_btn");
+            findByResourceID_Click(
+                    30, "com.sprint.care.beta:id/positive_btn",
+                    true, "Error");
             assertFail_toMainPage(5, "ERROR: error message");
         }
         navigateBack(1, 1);

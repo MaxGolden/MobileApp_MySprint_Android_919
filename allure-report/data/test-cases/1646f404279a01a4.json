@@ -1,0 +1,268 @@
+{
+  "uid" : "1646f404279a01a4",
+  "name" : "SPRCOM_105404",
+  "fullName" : "SPRCOM_92051_Android_LoginAO.SPRCOM_105400_Android_LoginAO_Login.SPRCOM_105404",
+  "historyId" : "9dfd69ada6839f76c84bc0650f4a79fc",
+  "time" : {
+    "start" : 1569861288766,
+    "stop" : 1569861318579,
+    "duration" : 29813
+  },
+  "description" : "My Sprint app Login as account owner",
+  "descriptionHtml" : "<p>My Sprint app Login as account owner</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1569861220335,
+      "stop" : 1569861234817,
+      "duration" : 14482
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "My Sprint app Login as account owner",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "1. Verify the main page is displayed and tap 'more info' icon",
+      "time" : {
+        "start" : 1569861288767,
+        "stop" : 1569861293853,
+        "duration" : 5086
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "582a24f24a474bb",
+        "name" : "Expected Result",
+        "source" : "582a24f24a474bb.txt",
+        "type" : "text/plain",
+        "size" : 28
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "2. Tap 'Sign in'",
+      "time" : {
+        "start" : 1569861293853,
+        "stop" : 1569861300346,
+        "duration" : 6493
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d2687b4f01eed6b3",
+        "name" : "Expected Result",
+        "source" : "d2687b4f01eed6b3.txt",
+        "type" : "text/plain",
+        "size" : 25
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "3. Enter the username and password into the fields",
+      "time" : {
+        "start" : 1569861300346,
+        "stop" : 1569861305479,
+        "duration" : 5133
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "57e521f0dbd67c66",
+        "name" : "Expected Result",
+        "source" : "57e521f0dbd67c66.txt",
+        "type" : "text/plain",
+        "size" : 33
+      } ],
+      "parameters" : [ {
+        "name" : "ACCusername",
+        "value" : "TWREG-59003"
+      }, {
+        "name" : "ACCpassword",
+        "value" : "T3stM3.P1s"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "4. Tap 'Sign in' button",
+      "time" : {
+        "start" : 1569861305479,
+        "stop" : 1569861306058,
+        "duration" : 579
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "201c6ab54a8cf45c",
+        "name" : "Expected Result",
+        "source" : "201c6ab54a8cf45c.txt",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "5. Verify the main page is displayed",
+      "time" : {
+        "start" : 1569861306058,
+        "stop" : 1569861317575,
+        "duration" : 11517
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5ed7a53170ca2cb6",
+        "name" : "Expected Result",
+        "source" : "5ed7a53170ca2cb6.txt",
+        "type" : "text/plain",
+        "size" : 22
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3e4480f13ed6936",
+      "name" : "Video Attachment",
+      "source" : "3e4480f13ed6936.mp4",
+      "type" : "video/mp4",
+      "size" : 3577804
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1569861507974,
+      "stop" : 1569861511013,
+      "duration" : 3039
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "SPRCOM_92051_Android_LoginAO.SPRCOM_105400_Android_LoginAO_Login"
+  }, {
+    "name" : "testClass",
+    "value" : "SPRCOM_92051_Android_LoginAO.SPRCOM_105400_Android_LoginAO_Login"
+  }, {
+    "name" : "testMethod",
+    "value" : "SPRCOM_105404"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SPRCOM-92052 My Sprint App Android - Sales"
+  }, {
+    "name" : "suite",
+    "value" : "SPRCOM_105400_Android_LoginAO_Login"
+  }, {
+    "name" : "subSuite",
+    "value" : "SPRCOM_92051_Android_LoginAO.SPRCOM_105400_Android_LoginAO_Login"
+  }, {
+    "name" : "host",
+    "value" : "CLMC02SH12YG8WM"
+  }, {
+    "name" : "thread",
+    "value" : "84509@CLMC02SH12YG8WM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "SPRCOM-105404 Test Login with type of account owner"
+  }, {
+    "name" : "epic",
+    "value" : "SPRCOM-92051 My Sprint App Android - LOGIN"
+  }, {
+    "name" : "feature",
+    "value" : "SPRCOM-105400 My Sprint App Android - LoginAO"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "appiumPort",
+    "value" : "4733"
+  }, {
+    "name" : "arg0",
+    "value" : "ST2"
+  }, {
+    "name" : "arg1",
+    "value" : "3369549079"
+  }, {
+    "name" : "arg2",
+    "value" : "TWREG-59003"
+  }, {
+    "name" : "arg3",
+    "value" : "T3stM3.P1s"
+  }, {
+    "name" : "deviceName",
+    "value" : "appium28"
+  }, {
+    "name" : "udid",
+    "value" : "emulator-5554"
+  }, {
+    "name" : "versionNo",
+    "value" : "care-beta-617026.apk"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "6e5387ed6a481ccc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569861117940,
+        "stop" : 1569861152150,
+        "duration" : 34210
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1646f404279a01a4.json",
+  "parameterValues" : [ "4733", "ST2", "3369549079", "TWREG-59003", "T3stM3.P1s", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+}

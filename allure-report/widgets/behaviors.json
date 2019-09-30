@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "4a5fff12b710bacbb2fe8bd074b4d0d7",
+    "name" : "SPRCOM-92050 My Sprint App Android - Payment",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "7f63d6807bb91d3c855c13d67cd62752",
+    "name" : "SPRCOM-92052 My Sprint App Android - Sales",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "666f1123fa3c974b86dd4c17863fa228",
+    "name" : "SPRCOM-92051 My Sprint App Android - LOGIN",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

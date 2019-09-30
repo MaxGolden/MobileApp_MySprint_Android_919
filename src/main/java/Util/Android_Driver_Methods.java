@@ -24,7 +24,7 @@ public class Android_Driver_Methods extends MainBase {
     private static String Error_Dialog_Password_Field = "T3stM3.P1s";
     private static String Error_Dialog_Password = "T3stM3.P1s";
 
-    // Appium find element by using Resource ID and click with error dialog check
+    // Appium find element by using Resource ID
     public static void findByResourceID_Click(int timeNum, String resourceID, boolean errorDialogCheck,
                                               String FailMessage) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
@@ -59,7 +59,6 @@ public class Android_Driver_Methods extends MainBase {
         }
     }
 
-    // Appium find element by using Resource ID and send keys
     public static void findByResourceID_SendKey(int timeNum, String resourceID, String keysInfo) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         Android_Driver.findElementById(resourceID).sendKeys(keysInfo);
@@ -79,31 +78,26 @@ public class Android_Driver_Methods extends MainBase {
         }
     }
 
-    // Appium find element by using Resource ID and clear
     public static void findByResourceID_Clear(int timeNum, String resourceID) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         Android_Driver.findElementById(resourceID).clear();
     }
 
-    // Appium find element by using Resource ID and get the text
     public static String findByResourceID_GetText(int timeNum, String resourceID) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         return Android_Driver.findElementById(resourceID).getText();
     }
 
-    // Appium find element by using Resource ID and check the status is enabled
     public static boolean findByResourceID_Enable(int timeNum, String resourceID) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         return Android_Driver.findElementById(resourceID).isEnabled();
     }
 
-    // Appium find element by using Resource ID and check existence
     public static List<AndroidElement> findByResourceID_Counts(int timeNum, String resourceID) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         return Android_Driver.findElementsById(resourceID);
     }
 
-    // Appium find element by using Resource ID and check existence
     public static boolean findByResourceID_Exist(int timeNum, String resourceID) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         List<AndroidElement> CountNum = Android_Driver.findElementsById(resourceID);
@@ -115,11 +109,42 @@ public class Android_Driver_Methods extends MainBase {
         return true;
     }
 
+    public static List<AndroidElement> findByResourceID_List(int timeNum, String resourceID) {
+        Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
+        return Android_Driver.findElementsById(resourceID);
+    }
+
+    public static int findByList_TextMatchIndex(List<AndroidElement> androidList, String matchText) {
+        if(androidList.size() < 1) {
+            assertFail_toMainPage(true, 5, "Element not found");
+        }
+        for(int i = 0; i <= (androidList.size()-1); i++) {
+            if(androidList.get(i).getText().toLowerCase().equals(matchText)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void findByList_IndexClick(int timeNum, String resourceID, String matchText) {
+        Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
+        List<AndroidElement> androidList = Android_Driver.findElementsById(resourceID);
+        if(androidList.size() < 1) {
+            assertFail_toMainPage(true, 5, "Element not found");
+        }
+        for(int i = 0; i <= (androidList.size()-1); i++) {
+            if(androidList.get(i).getText().toLowerCase().equals(matchText)) {
+                androidList.get(i).click();
+            }
+        }
+    }
+
     // Appium find element by using class name and click
     public static void findByClassName_Click(int timeNum, String className, int IndexNum) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         Android_Driver.findElementsByClassName(className).get(IndexNum).click();
     }
+
 
     // Appium find element by using AndroidUIAutomator with text and click - "text(\"Add a new device\")"
     public static void findByAndroidUIAutomator_Click(int timeNum, String textContent) {
@@ -138,7 +163,7 @@ public class Android_Driver_Methods extends MainBase {
                 if(errorDialogCheck) {
                     Error_dialog_detect("Error Dialog Found");
                 } else {
-                    assertFail_toMainPage(10, FailMessage);
+                    assertFail_toMainPage(true, 5, FailMessage);
                 }
             }
         }catch (NoSuchElementException e) {
@@ -146,7 +171,6 @@ public class Android_Driver_Methods extends MainBase {
         }
     }
 
-    // Appium find element by using AndroidUIAutomator and check existence
     public static boolean findByAndroidUIAutomator_Exist(int timeNum, String textContent) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         List<AndroidElement> CountNum = Android_Driver.findElementsByAndroidUIAutomator(textContent);
@@ -158,17 +182,18 @@ public class Android_Driver_Methods extends MainBase {
         return true;
     }
 
-    // Appium find element by using AndroidUIAutomator with text and check the status is enabled
     public static List<AndroidElement> findByAndroidUIAutomator_Counts(int timeNum, String textContent) {
         Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
         return Android_Driver.findElementsByAndroidUIAutomator(textContent);
     }
+
 
     // Appium find element by using TouchAction with coordinators
     public static void findByCoord_Click(int X, int Y) {
         TouchAction t = new TouchAction(Android_Driver);
         t.tap(PointOption.point(X, Y)).release().perform();
     }
+
 
     // Appium find element and scroll down by using TouchAction
     public static void findByResourceID_ScrollDown(String ElementDown, String ElementUp, int TimeNum) {
@@ -193,15 +218,15 @@ public class Android_Driver_Methods extends MainBase {
                 .perform();
     }
 
-    public static void findByResourceID_ScrollDown(boolean reverse) {
+    public static void findByResourceID_ScrollDown(boolean scroll_UP, int scrollDis) {
         TouchAction t = new TouchAction(Android_Driver);
-        if(reverse) {
+        if(scroll_UP) {
             t.longPress(PointOption.point(200,300))
-                    .moveTo(PointOption.point(200, 1200))
+                    .moveTo(PointOption.point(200, 300+scrollDis))
                     .release()
                     .perform();
-        } else  {
-            t.longPress(PointOption.point(200,1200))
+        } else {
+            t.longPress(PointOption.point(200,300+scrollDis))
                     .moveTo(PointOption.point(200, 300))
                     .release()
                     .perform();
@@ -230,18 +255,17 @@ public class Android_Driver_Methods extends MainBase {
             } else {
                 String error_mes = Android_Driver.findElementById(Error_Dialog_Message).getText();
                 assertFail_toMainPage(
-                        5, "Error dialog detected, check detail with screenshot attachment " +
+                        true, 5, "Error dialog detected, check detail with screenshot attachment " +
                                 "\n MORE INFO: " + error_mes);
                 Android_Driver.quit();
             }
         } else if(findByResourceID_Exist(3, "com.sprint.care.beta:id/warning")) {
-            allure_mes("Sprint network unavailable");
-            Assert.fail();
-            Android_Driver.quit();
+            assertFail_toMainPage(true, 5, "Sprint network unavailable");
         } else {
-            assertFail_toMainPage(5, FailMessage);
+            assertFail_toMainPage(true, 5, FailMessage);
         }
     }
+
 
     // Allure message show in the allure report
     public static void allure_mes(String FailMessage) {
@@ -260,10 +284,9 @@ public class Android_Driver_Methods extends MainBase {
         }
     }
 
-    public static void assertFail_toMainPage(int backSteps, String allure_fail) {
+    public static void assertFail_toMainPage(int backSteps, String FailMessage) {
+        allure_mes(FailMessage);
         saveScreenshotPNG_Allure_Fail(Android_Driver);
-        allure_mes(allure_fail);
-
         for(int i = 1; i <= backSteps; i++) {
 //            Thread.sleep(500);
             if(findByResourceID_Exist(2, "com.sprint.care.beta:id/dialogTitle_tv")) {
@@ -276,4 +299,21 @@ public class Android_Driver_Methods extends MainBase {
         }
     }
 
+    public static void assertFail_toMainPage(boolean toMainPage, int backSteps, String FailMessage) {
+        allure_mes(FailMessage);
+        saveScreenshotPNG_Allure_Fail(Android_Driver);
+        if(toMainPage) {
+            for(int i = 1; i <= backSteps; i++) {
+                if(findByResourceID_Exist(2, "com.sprint.care.beta:id/dialogTitle_tv")) {
+                    findByResourceID_Click(2, "com.sprint.care.beta:id/positive_btn");
+                }
+                Android_Driver.navigate().back();
+                if(findByResourceID_Exist(8, "com.sprint.care.beta:id/action_button")) {
+                    Assert.fail();
+                }
+            }
+        } else {
+            Assert.fail();
+        }
+    }
 }

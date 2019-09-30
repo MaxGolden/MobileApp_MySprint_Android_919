@@ -10,7 +10,7 @@ import static Util.Android_Driver_Methods.*;
 
 @Listeners(Listeners_Tests.Listeners_Android.class)
 @Epic("SPRCOM-92050 My Sprint App Android - Payment")
-@Feature("SPRCOM-105300 My Sprint App Android - NonLogin Add Payment Method")
+@Feature("SPRCOM-105300 My Sprint App Android - NonLogin Payment")
 public class SPRCOM_105300_Android_NonLogin_AddPaymentMethod extends MainBase {
 
     private String cardName = "Max";

@@ -23,7 +23,7 @@
     <test verbose="2" name="SPRCOM_105700_Android_LoginAO_Sales">
         <classes>
             <class name="SPRCOM_92052_Android_Sales.SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart" />
-<!--            <class name="SPRCOM_92052_Android_Sales.SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart" />-->
+            <class name="SPRCOM_92052_Android_Sales.SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart" />
             <class name="SPRCOM_92052_Android_Sales.SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus" />
         </classes>
     </test>

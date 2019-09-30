@@ -1,0 +1,305 @@
+{
+  "uid" : "32bad3d8eb9606bf",
+  "name" : "SPRCOM_105506",
+  "fullName" : "SPRCOM_92050_Android_Payment.SPRCOM_105500_Android_LoginAO_AddpaymentMethod.SPRCOM_105506",
+  "historyId" : "6282477d3f36fb906ac4b1d5782f2e36",
+  "time" : {
+    "start" : 1569861175148,
+    "stop" : 1569861219900,
+    "duration" : 44752
+  },
+  "description" : "LoginAO Add New Card to account - from Payment page",
+  "descriptionHtml" : "<p>LoginAO Add New Card to account - from Payment page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1569860871956,
+      "stop" : 1569860886626,
+      "duration" : 14670
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "LoginAO Add New Card to account - from Payment page",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "1. Tap the ‘Make a payment’ on the MainPage",
+      "time" : {
+        "start" : 1569861175148,
+        "stop" : 1569861176431,
+        "duration" : 1283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "77f7582b6a9f8014",
+        "name" : "Expected Result",
+        "source" : "77f7582b6a9f8014.txt",
+        "type" : "text/plain",
+        "size" : 25
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "2. Tap ‘Add payment method’ on the page",
+      "time" : {
+        "start" : 1569861176431,
+        "stop" : 1569861178102,
+        "duration" : 1671
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cdef97b478947f95",
+        "name" : "Expected Result",
+        "source" : "cdef97b478947f95.txt",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "3. Tap ‘Add a new payment method’ and tap OK",
+      "time" : {
+        "start" : 1569861178103,
+        "stop" : 1569861183344,
+        "duration" : 5241
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e73fee925206acd2",
+        "name" : "Expected Result",
+        "source" : "e73fee925206acd2.txt",
+        "type" : "text/plain",
+        "size" : 27
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "4. Enter card info",
+      "time" : {
+        "start" : 1569861183344,
+        "stop" : 1569861189811,
+        "duration" : 6467
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5ae1d24dd3263a54",
+        "name" : "Expected Result",
+        "source" : "5ae1d24dd3263a54.txt",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "5. Scroll down and tap ‘Save payment method’ and save",
+      "time" : {
+        "start" : 1569861189811,
+        "stop" : 1569861193625,
+        "duration" : 3814
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7d03ec50baae8a0f",
+        "name" : "Expected Result",
+        "source" : "7d03ec50baae8a0f.txt",
+        "type" : "text/plain",
+        "size" : 36
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "6. Error with duplicate payment method added and tap OK and navigate back",
+      "time" : {
+        "start" : 1569861193625,
+        "stop" : 1569861204654,
+        "duration" : 11029
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d7f2c0f805ef9833",
+        "name" : "Expected Result",
+        "source" : "d7f2c0f805ef9833.txt",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "7. Google save credit card click ‘NO THANKS’",
+      "time" : {
+        "start" : 1569861204654,
+        "stop" : 1569861209806,
+        "duration" : 5152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "31cb3637c0b3fccc",
+        "name" : "Expected Result",
+        "source" : "31cb3637c0b3fccc.txt",
+        "type" : "text/plain",
+        "size" : 20
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "8. Back to Main page",
+      "time" : {
+        "start" : 1569861209806,
+        "stop" : 1569861218181,
+        "duration" : 8375
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d58a98eb6e21879a",
+        "name" : "Expected Result",
+        "source" : "d58a98eb6e21879a.txt",
+        "type" : "text/plain",
+        "size" : 22
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "5be3fb0b5be6bfb2",
+      "name" : "Video Attachment",
+      "source" : "5be3fb0b5be6bfb2.mp4",
+      "type" : "video/mp4",
+      "size" : 7476126
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1569861219906,
+      "stop" : 1569861220334,
+      "duration" : 428
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "SPRCOM_92050_Android_Payment.SPRCOM_105500_Android_LoginAO_AddpaymentMethod"
+  }, {
+    "name" : "testClass",
+    "value" : "SPRCOM_92050_Android_Payment.SPRCOM_105500_Android_LoginAO_AddpaymentMethod"
+  }, {
+    "name" : "testMethod",
+    "value" : "SPRCOM_105506"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SPRCOM-92050 My Sprint App Android - Non login Payment"
+  }, {
+    "name" : "suite",
+    "value" : "SPRCOM_105500_Android_Login_MakePayment"
+  }, {
+    "name" : "subSuite",
+    "value" : "SPRCOM_92050_Android_Payment.SPRCOM_105500_Android_LoginAO_AddpaymentMethod"
+  }, {
+    "name" : "host",
+    "value" : "CLMC02SH12YG8WM"
+  }, {
+    "name" : "thread",
+    "value" : "84509@CLMC02SH12YG8WM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "SPRCOM-105506 LoginAO Add New Card to account - from payment page"
+  }, {
+    "name" : "epic",
+    "value" : "SPRCOM-92050 My Sprint App Android - Payment"
+  }, {
+    "name" : "feature",
+    "value" : "SPRCOM-105500 My Sprint App Android - LoginAO Payment"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "appiumPort",
+    "value" : "4733"
+  }, {
+    "name" : "deviceName",
+    "value" : "appium28"
+  }, {
+    "name" : "udid",
+    "value" : "emulator-5554"
+  }, {
+    "name" : "versionNo",
+    "value" : "care-beta-617026.apk"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "32bad3d8eb9606bf.json",
+  "parameterValues" : [ "4733", "appium28", "emulator-5554", "care-beta-617026.apk" ]
+}

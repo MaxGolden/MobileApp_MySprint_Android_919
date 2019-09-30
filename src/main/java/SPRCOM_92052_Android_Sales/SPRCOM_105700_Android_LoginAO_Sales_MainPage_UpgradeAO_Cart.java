@@ -20,7 +20,7 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart extends
             dataProviderClass = Data.Upgrade_DeviceOptions.class)
     @Description("My Sprint app Login - Sales: 'upgrade this device' on the MainPage")
     @Severity(SeverityLevel.CRITICAL)
-    @Story("SPRCOM-105706 My Sprint App iOS - MainPage: Upgrade Device and save to Cart")
+    @Story("SPRCOM-105706 MainPage: Upgrade Device and add to Cart")
     public void SPRCOM_105706(String deviceType, String brand, String model, String planOption, String phonePlan,
                               String protectionOption, String CurrentPhone) throws Exception
     {
@@ -34,14 +34,19 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart extends
     }
 
     @Step("1. Make sure MainPage loaded and Tap ‘Upgrade this device’")
-    private void SPRCOM_105706_Step1() throws InterruptedException
+    private void SPRCOM_105706_Step1()
     {
         saveTextLog_Allure_er("Bottom Sheet should pop up with different type of devices");
         if(findByResourceID_Exist(20, "com.sprint.care.beta:id/action_button")) {
-            findByAndroidUIAutomator_Click(5, "text(\"Upgrade this device\")");
-        } else {
-            assertFail_toMainPage(3, "No main page showed with unknown reason! - Screenshot taken");
+            findByResourceID_ScrollDown(false, 200);
         }
+        findByResourceID_Click(5, "com.sprint.care.beta:id/action_button_outlined",
+                true, "No main page showed with unknown reason!");
+        findByResourceID_Click(
+                5,
+                "com.sprint.care.beta:id/upgrade_btn",
+                true,
+                "Element not found");
     }
     
     @Step("2. Default filter, tap the model name on the page")
@@ -60,12 +65,8 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart extends
     private void SPRCOM_105706_Step3()
     {
         saveTextLog_Allure_er("Payment page is displayed");
-
-        if(findByResourceID_Enable(30, "com.sprint.care.beta:id/continueButton")) {
-            findByResourceID_Click(5, "com.sprint.care.beta:id/continueButton");
-        } else {
-            assertFail_toMainPage(3, "Continue button is having issue");
-        }
+        findByResourceID_Click(30, "com.sprint.care.beta:id/continueButton",
+                true, "Error");
     }
 
     @Step("4. Use Data Provider with three options and tap continue")
@@ -80,7 +81,8 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart extends
         } else {
             full_planOption = "Buy it with 24 monthly installments";
         }
-        findByAndroidUIAutomator_Click(15, "text(\"" + full_planOption + "\")");
+        findByAndroidUIAutomator_Click(15, "text(\"" + full_planOption + "\")",
+                true, "Error");
         findByResourceID_Click(5, "com.sprint.care.beta:id/continueButton");
     }
 
@@ -102,7 +104,8 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart extends
     {
         saveTextLog_Allure_er("---Main page is displayed");
         if(findByAndroidUIAutomator_Exist(10, "text(\"Error\")")) {
-            findByResourceID_Click(30, "com.sprint.care.beta:id/positive_btn");
+            findByResourceID_Click(30, "com.sprint.care.beta:id/positive_btn",
+                    true, "Error");
             assertFail_toMainPage(5, "ERROR: error message");
         }
     }
