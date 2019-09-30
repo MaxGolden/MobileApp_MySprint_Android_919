@@ -1,1 +1,0 @@
-Loading for a long time at first launch(20s) and Shop devices page is displayed
