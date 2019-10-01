@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import static Listeners_Tests.Listeners_Android.saveTextLog_Allure_er;
 import static Util.Android_Driver_Methods.*;
+import static Util.Android_Driver_Methods.findByAndroidUIAutomator_Click;
 
 @Listeners(Listeners_Tests.Listeners_Android.class)
 @Epic("SPRCOM-92052 My Sprint App Android - Sales")
@@ -91,10 +92,14 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart extend
         } else {
             full_planOption = "Buy it with 24 monthly installments";
         }
-        findByAndroidUIAutomator_Click(
-                15, "text(\"" + full_planOption + "\")",
-                true, "Error");
-        findByResourceID_Click(5, "com.sprint.care.beta:id/continueButton");
+        if(findByAndroidUIAutomator_Exist(15, "text(\"" + full_planOption + "\")")) {
+            findByAndroidUIAutomator_Click(
+                    15, "text(\"" + full_planOption + "\")",
+                    true, "Error");
+            findByResourceID_Click(5, "com.sprint.care.beta:id/continueButton");
+        } else {
+            assertFail_toMainPage(true, 5, "No plan option found in the list, see att");
+        }
     }
 
     @Step("6. Make sure default Continue button is disabled and click default shared plan ($20)? , tap Continue")

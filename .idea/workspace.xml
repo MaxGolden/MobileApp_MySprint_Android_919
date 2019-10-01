@@ -17,53 +17,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SPRCOM_92052.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -183,14 +137,14 @@
         <option value="$PROJECT_DIR$/SPRCOM_92050.xml" />
         <option value="$PROJECT_DIR$/src/main/java/SPRCOM_92050_Android_Payment/SPRCOM_105300_Android_NonLogin_CardTypeVerify.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data/AccountOwner_Info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Data/NewLine_DeviceOptions.java" />
         <option value="$PROJECT_DIR$/SPRCOM_92052.xml" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/SPRCOM_92050_Android_Payment/SPRCOM_105300_Android_NonLogin_AddPaymentMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart.java" />
         <option value="$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/Util/Android_Driver_Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Data/NewLine_DeviceOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart.java" />
       </list>
     </option>
   </component>
@@ -295,8 +249,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1852" />
-    <option name="y" value="214" />
+    <option name="x" value="-1793" />
+    <option name="y" value="160" />
     <option name="width" value="1402" />
     <option name="height" value="877" />
   </component>
@@ -339,7 +293,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SPRCOM_92052_Android_Sales" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ios_test_android_newDesign" type="b2602c69:ProjectViewProjectNode" />
@@ -347,7 +301,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
+              <item name="SPRCOM_92052_Android_Sales" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -494,8 +448,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1946" y="246" width="1402" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1793" y="160" width="1402" height="877" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -673,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data/NewLine_DeviceOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Data/Upgrade_DeviceOptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -698,41 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPRCOM_92050.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPRCOM_92052.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -774,8 +685,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="378">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPRCOM_92052.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPRCOM_92050.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SPRCOM_92052_Android_Sales/SPRCOM_105700_Android_LoginAO_Sales_MainPage_AddNewLine_Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="100" column="85" selection-start-line="100" selection-start-column="85" selection-end-line="100" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data/NewLine_DeviceOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
         </state>
       </provider>
     </entry>
