@@ -13,13 +13,11 @@ import static Util.Android_Driver_Methods.*;
 @Feature("SPRCOM-105700 My Sprint App Android - LoginAO Sales")
 public class SPRCOM_105700_Android_LoginAO_Sales_PriorityStatus extends MainBase {
 
-    @Test(groups = {"LoginAO_Sales"}, priority = 7, dataProvider = "DeviceOption",
-            dataProviderClass = Data.Upgrade_DeviceOptions.class)
+    @Test(groups = {"LoginAO_Sales"}, priority = 7)
     @Description("My Sprint app Login - Sales: 'upgrade this device' on the MainPage")
     @Severity(SeverityLevel.CRITICAL)
     @Story("SPRCOM-105708 MainPage: Priority Status")
-    public void SPRCOM_105708(String deviceType, String brand, String model, String planOption, String phonePlan,
-                              String protectionOption, String CurrentPhone)
+    public void SPRCOM_105708()
     {
         SPRCOM_105708_Step1();
         SPRCOM_105708_Step2();

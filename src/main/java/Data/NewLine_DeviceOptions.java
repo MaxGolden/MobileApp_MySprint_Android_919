@@ -17,7 +17,6 @@ public class NewLine_DeviceOptions {
 //                {"Tablets", "Apple", "Apple iPhone XR", "finance", "Unlimited", "Add protection"},
 //                {"Watches", "Apple", "Apple iPhone XR", "finance", "Unlimited", "Add protection"},
 //                {"Others", "Apple", "Apple iPhone XR", "finance", "Unlimited", "Add protection"},
-
         };
         return deviceOption;
     }
