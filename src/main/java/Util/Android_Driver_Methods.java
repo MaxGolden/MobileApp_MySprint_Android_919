@@ -109,11 +109,7 @@ public class Android_Driver_Methods extends MainBase {
         return true;
     }
 
-    public static List<AndroidElement> findByResourceID_List(int timeNum, String resourceID) {
-        Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
-        return Android_Driver.findElementsById(resourceID);
-    }
-
+    // find by List and get index based on the text
     public static int findByList_TextMatchIndex(List<AndroidElement> androidList, String matchText) {
         if(androidList.size() < 1) {
             assertFail_toMainPage(true, 5, "Element not found");
@@ -134,6 +130,22 @@ public class Android_Driver_Methods extends MainBase {
         }
         for(int i = 0; i <= (androidList.size()-1); i++) {
             if(androidList.get(i).getText().toLowerCase().equals(matchText)) {
+                androidList.get(i).click();
+            }
+        }
+    }
+    // with Multi-text
+    public static void findByList_IndexClickMT3(int timeNum, String resourceID, String matchText1,
+                                               String matchText2, String matchText3) {
+        Android_Driver.manage().timeouts().implicitlyWait(timeNum, TimeUnit.SECONDS);
+        List<AndroidElement> androidList = Android_Driver.findElementsById(resourceID);
+        if(androidList.size() < 1) {
+            assertFail_toMainPage(true, 5, "Element not found");
+        }
+        for(int i = 0; i <= (androidList.size()-1); i++) {
+            if(androidList.get(i).getText().toLowerCase().equals(matchText1) ||
+                    androidList.get(i).getText().toLowerCase().equals(matchText2) ||
+                    androidList.get(i).getText().toLowerCase().equals(matchText3)) {
                 androidList.get(i).click();
             }
         }

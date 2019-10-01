@@ -38,15 +38,17 @@ public class SPRCOM_105700_Android_LoginAO_Sales_MainPage_UpgradeAO_Cart extends
     {
         saveTextLog_Allure_er("Bottom Sheet should pop up with different type of devices");
         if(findByResourceID_Exist(20, "com.sprint.care.beta:id/action_button")) {
-            findByResourceID_ScrollDown(false, 200);
+            findByResourceID_ScrollDown(false, 300);
         }
-        findByResourceID_Click(5, "com.sprint.care.beta:id/action_button_outlined",
-                true, "No main page showed with unknown reason!");
-        findByResourceID_Click(
-                5,
-                "com.sprint.care.beta:id/upgrade_btn",
-                true,
-                "Element not found");
+        if(findByResourceID_Exist(5, "com.sprint.care.beta:id/action_button_filled")) {
+            findByResourceID_Click(1, "com.sprint.care.beta:id/action_button_filled");
+        }
+        if(findByResourceID_Exist(1, "com.sprint.care.beta:id/action_button_outlined")) {
+            findByResourceID_Click(1, "com.sprint.care.beta:id/action_button_outlined");
+        }
+        if(findByResourceID_Exist(1, "com.sprint.care.beta:id/upgrade_btn")) {
+            findByResourceID_Click(1, "com.sprint.care.beta:id/upgrade_btn");
+        }
     }
     
     @Step("2. Default filter, tap the model name on the page")
